@@ -41,45 +41,45 @@ class Ui_MainWindow(object):
 "border-radius: 10px;\n"
 "background-color: #2b2d2e;\n"
 "}\n"
-"QPushButton#save_btn, #start_planner, #save_map{\n"
+"QPushButton#save_btn,#save_btn_3, #start_planner, #save_map,#save_map_2{\n"
 "border: 1px;\n"
 "border-radius: 10px;\n"
 "background-color: #0075ff;\n"
 "}\n"
-"QPushButton#save_btn:hover, #start_planner:hover, #save_map:hover{\n"
+"QPushButton#save_btn:hover,#save_btn_3:hover, #start_planner:hover, #save_map:hover,#save_map_2:hover{\n"
 "background-color: #005dcc;\n"
 "}\n"
-"QPushButton#go_home,#reset_btn, #set_initial{\n"
+"QPushButton#go_home,#reset_btn,#reset_btn_3, #set_initial, #set_initial_2{\n"
 "background-color: #2b2d2e;\n"
 "boder: 1px;\n"
 "border-radius: 10px;\n"
 "}\n"
-"QPushButton#go_home:hover,#reset_btn:hover, #set_initial:hover{\n"
+"QPushButton#go_home:hover,#reset_btn:hover,#reset_btn_3:hover, #set_initial:hover, #set_initial_2:hover{\n"
 "background-color: #4e5254;\n"
 "}\n"
-"QPushButton#new_map{\n"
+"QPushButton#new_map,#new_map_3{\n"
 "color: #1fdf64;\n"
 "}\n"
-"QPushButton#new_map:hover{\n"
+"QPushButton#new_map:hover,#new_map_3:hover{\n"
 "color: #27ff76;\n"
 "}\n"
-"QPushButton#load_map, #set_timer{\n"
+"QPushButton#load_map,#load_map_3, #set_timer{\n"
 "color: #72777a;\n"
 "}\n"
-"QPushButton#load_map:hover, #set_timer:hover{\n"
+"QPushButton#load_map:hover,#load_map_3:hover, #set_timer:hover{\n"
 "color:#959ca0;\n"
 "}\n"
-"QPushButton#station_1, #station_2, #station_3, #station_4, #station_01, #station_02, #station_03, #station_04{\n"
+"QPushButton#station_1, #station_2, #station_3, #station_4, #station_01, #station_02, #station_03, #station_04,#station_9, #station_10, #station_11, #station_12{\n"
 "color: #4e5254\n"
 "}\n"
-"QPushButton#station_1:hover, #station_2:hover, #station_3:hover, #station_4:hover, #station_01:hover, #station_02:hover, #station_03:hover, #station_04:hover{\n"
+"QPushButton#station_1:hover, #station_2:hover, #station_3:hover, #station_4:hover, #station_01:hover, #station_02:hover, #station_03:hover, #station_04:hover,#station_9:hover, #station_10:hover, #station_11:hover, #station_12:hover{\n"
 "color: #71777a;\n"
 "}\n"
-"QPushButton#close_settings, #close_mapping{\n"
+"QPushButton#close_settings, #close_mapping,#close_setting, #close_map{\n"
 "color: #4e5254;\n"
 "font: 20pt \"Wix Madefor Display\";\n"
 "}\n"
-"QPushButton#close_settings:hover, #close_mapping:hover{\n"
+"QPushButton#close_settings:hover, #close_mapping:hover,#close_setting:hover, #close_map:hover{\n"
 "color: #71777a;\n"
 "}")
         self.centralwidget = QtWidgets.QWidget(MainWindow)
@@ -101,6 +101,7 @@ class Ui_MainWindow(object):
         self.frame.setFrameShadow(QtWidgets.QFrame.Raised)
         self.frame.setObjectName("frame")
         self.horizontalLayout_2 = QtWidgets.QHBoxLayout(self.frame)
+        self.horizontalLayout_2.setContentsMargins(-1, 0, -1, 0)
         self.horizontalLayout_2.setObjectName("horizontalLayout_2")
         self.logo_btn = QtWidgets.QPushButton(self.frame)
         self.logo_btn.setMinimumSize(QtCore.QSize(40, 40))
@@ -147,14 +148,14 @@ class Ui_MainWindow(object):
         self.verticalLayout_11.setObjectName("verticalLayout_11")
         self.home_frame = QtWidgets.QFrame(self.home_page)
         self.home_frame.setMinimumSize(QtCore.QSize(400, 500))
-        self.home_frame.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.home_frame.setFrameShape(QtWidgets.QFrame.NoFrame)
         self.home_frame.setFrameShadow(QtWidgets.QFrame.Raised)
         self.home_frame.setObjectName("home_frame")
         self.verticalLayout_12 = QtWidgets.QVBoxLayout(self.home_frame)
         self.verticalLayout_12.setContentsMargins(15, 15, 15, 15)
         self.verticalLayout_12.setObjectName("verticalLayout_12")
         self.frame_9 = QtWidgets.QFrame(self.home_frame)
-        self.frame_9.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_9.setFrameShape(QtWidgets.QFrame.NoFrame)
         self.frame_9.setFrameShadow(QtWidgets.QFrame.Raised)
         self.frame_9.setObjectName("frame_9")
         self.verticalLayout_10 = QtWidgets.QVBoxLayout(self.frame_9)
@@ -240,7 +241,7 @@ class Ui_MainWindow(object):
         self.verticalLayout_4.setObjectName("verticalLayout_4")
         self.settings_frame = QtWidgets.QFrame(self.setting_page)
         self.settings_frame.setMinimumSize(QtCore.QSize(400, 500))
-        self.settings_frame.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.settings_frame.setFrameShape(QtWidgets.QFrame.NoFrame)
         self.settings_frame.setFrameShadow(QtWidgets.QFrame.Raised)
         self.settings_frame.setObjectName("settings_frame")
         self.verticalLayout_5 = QtWidgets.QVBoxLayout(self.settings_frame)
@@ -317,14 +318,14 @@ class Ui_MainWindow(object):
         self.verticalLayout_8.setObjectName("verticalLayout_8")
         self.mapping_frame = QtWidgets.QFrame(self.mapping_page)
         self.mapping_frame.setMinimumSize(QtCore.QSize(400, 500))
-        self.mapping_frame.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.mapping_frame.setFrameShape(QtWidgets.QFrame.NoFrame)
         self.mapping_frame.setFrameShadow(QtWidgets.QFrame.Raised)
         self.mapping_frame.setObjectName("mapping_frame")
         self.verticalLayout_9 = QtWidgets.QVBoxLayout(self.mapping_frame)
         self.verticalLayout_9.setContentsMargins(15, 15, 15, 15)
         self.verticalLayout_9.setObjectName("verticalLayout_9")
         self.frame_5 = QtWidgets.QFrame(self.mapping_frame)
-        self.frame_5.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_5.setFrameShape(QtWidgets.QFrame.NoFrame)
         self.frame_5.setFrameShadow(QtWidgets.QFrame.Raised)
         self.frame_5.setObjectName("frame_5")
         self.verticalLayout_7 = QtWidgets.QVBoxLayout(self.frame_5)
@@ -352,7 +353,7 @@ class Ui_MainWindow(object):
         self.start_map.setObjectName("start_map")
         self.verticalLayout_7.addWidget(self.start_map, 0, QtCore.Qt.AlignHCenter)
         self.save_frame = QtWidgets.QFrame(self.frame_5)
-        self.save_frame.setMaximumSize(QtCore.QSize(16777215, 0))
+        self.save_frame.setMaximumSize(QtCore.QSize(16777215, 150))
         self.save_frame.setFrameShape(QtWidgets.QFrame.NoFrame)
         self.save_frame.setFrameShadow(QtWidgets.QFrame.Raised)
         self.save_frame.setObjectName("save_frame")
@@ -394,10 +395,29 @@ class Ui_MainWindow(object):
         self.horizontalLayout_10.setSpacing(0)
         self.horizontalLayout_10.setObjectName("horizontalLayout_10")
         self.frame_6 = QtWidgets.QFrame(self.rviz_page)
-        self.frame_6.setMaximumSize(QtCore.QSize(150, 16777215))
+        self.frame_6.setMinimumSize(QtCore.QSize(150, 0))
+        self.frame_6.setMaximumSize(QtCore.QSize(300, 16777215))
         self.frame_6.setFrameShape(QtWidgets.QFrame.NoFrame)
         self.frame_6.setFrameShadow(QtWidgets.QFrame.Raised)
         self.frame_6.setObjectName("frame_6")
+        self.verticalLayout_15 = QtWidgets.QVBoxLayout(self.frame_6)
+        self.verticalLayout_15.setContentsMargins(0, 0, 0, 0)
+        self.verticalLayout_15.setSpacing(0)
+        self.verticalLayout_15.setObjectName("verticalLayout_15")
+        self.frame_10 = QtWidgets.QFrame(self.frame_6)
+        self.frame_10.setFrameShape(QtWidgets.QFrame.NoFrame)
+        self.frame_10.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_10.setObjectName("frame_10")
+        self.horizontalLayout_14 = QtWidgets.QHBoxLayout(self.frame_10)
+        self.horizontalLayout_14.setContentsMargins(0, 0, 0, 0)
+        self.horizontalLayout_14.setSpacing(0)
+        self.horizontalLayout_14.setObjectName("horizontalLayout_14")
+        self.label_4 = QtWidgets.QLabel(self.frame_10)
+        self.label_4.setMinimumSize(QtCore.QSize(300, 300))
+        self.label_4.setText("")
+        self.label_4.setObjectName("label_4")
+        self.horizontalLayout_14.addWidget(self.label_4)
+        self.verticalLayout_15.addWidget(self.frame_10, 0, QtCore.Qt.AlignTop)
         self.horizontalLayout_10.addWidget(self.frame_6)
         self.frame_4 = QtWidgets.QFrame(self.rviz_page)
         self.frame_4.setFrameShape(QtWidgets.QFrame.NoFrame)
@@ -408,18 +428,42 @@ class Ui_MainWindow(object):
         self.verticalLayout_13.setSpacing(15)
         self.verticalLayout_13.setObjectName("verticalLayout_13")
         self.rviz_frame = QtWidgets.QFrame(self.frame_4)
-        self.rviz_frame.setFrameShape(QtWidgets.QFrame.NoFrame)
+        self.rviz_frame.setFrameShape(QtWidgets.QFrame.StyledPanel)
         self.rviz_frame.setFrameShadow(QtWidgets.QFrame.Raised)
         self.rviz_frame.setObjectName("rviz_frame")
         self.gridLayout = QtWidgets.QGridLayout(self.rviz_frame)
         self.gridLayout.setObjectName("gridLayout")
         self.verticalLayout_13.addWidget(self.rviz_frame)
-        self.frame_8 = QtWidgets.QFrame(self.frame_4)
-        self.frame_8.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.settings_pages = QtWidgets.QStackedWidget(self.frame_4)
+        self.settings_pages.setObjectName("settings_pages")
+        self.map_page = QtWidgets.QWidget()
+        self.map_page.setObjectName("map_page")
+        self.verticalLayout_22 = QtWidgets.QVBoxLayout(self.map_page)
+        self.verticalLayout_22.setObjectName("verticalLayout_22")
+        self.mapping_frame_2 = QtWidgets.QFrame(self.map_page)
+        self.mapping_frame_2.setMinimumSize(QtCore.QSize(400, 50))
+        self.mapping_frame_2.setFrameShape(QtWidgets.QFrame.NoFrame)
+        self.mapping_frame_2.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.mapping_frame_2.setObjectName("mapping_frame_2")
+        self.verticalLayout_19 = QtWidgets.QVBoxLayout(self.mapping_frame_2)
+        self.verticalLayout_19.setContentsMargins(15, 0, 15, 0)
+        self.verticalLayout_19.setSpacing(0)
+        self.verticalLayout_19.setObjectName("verticalLayout_19")
+        self.frame_8 = QtWidgets.QFrame(self.mapping_frame_2)
+        self.frame_8.setFrameShape(QtWidgets.QFrame.NoFrame)
         self.frame_8.setFrameShadow(QtWidgets.QFrame.Raised)
         self.frame_8.setObjectName("frame_8")
-        self.verticalLayout_14 = QtWidgets.QVBoxLayout(self.frame_8)
-        self.verticalLayout_14.setObjectName("verticalLayout_14")
+        self.verticalLayout_20 = QtWidgets.QVBoxLayout(self.frame_8)
+        self.verticalLayout_20.setContentsMargins(0, 0, 0, 0)
+        self.verticalLayout_20.setSpacing(10)
+        self.verticalLayout_20.setObjectName("verticalLayout_20")
+        self.close_map = QtWidgets.QPushButton(self.frame_8)
+        self.close_map.setObjectName("close_map")
+        self.verticalLayout_20.addWidget(self.close_map, 0, QtCore.Qt.AlignRight)
+        self.mapping_info_2 = QtWidgets.QLabel(self.frame_8)
+        self.mapping_info_2.setAlignment(QtCore.Qt.AlignCenter)
+        self.mapping_info_2.setObjectName("mapping_info_2")
+        self.verticalLayout_20.addWidget(self.mapping_info_2)
         self.start_map_2 = QtWidgets.QPushButton(self.frame_8)
         self.start_map_2.setMinimumSize(QtCore.QSize(36, 36))
         self.start_map_2.setMaximumSize(QtCore.QSize(36, 36))
@@ -428,9 +472,195 @@ class Ui_MainWindow(object):
 "border-radius: 18px;")
         self.start_map_2.setText("")
         self.start_map_2.setObjectName("start_map_2")
-        self.verticalLayout_14.addWidget(self.start_map_2, 0, QtCore.Qt.AlignHCenter)
-        self.verticalLayout_13.addWidget(self.frame_8, 0, QtCore.Qt.AlignBottom)
+        self.verticalLayout_20.addWidget(self.start_map_2, 0, QtCore.Qt.AlignHCenter)
+        self.save_frame_2 = QtWidgets.QFrame(self.frame_8)
+        self.save_frame_2.setMaximumSize(QtCore.QSize(16777215, 150))
+        self.save_frame_2.setFrameShape(QtWidgets.QFrame.NoFrame)
+        self.save_frame_2.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.save_frame_2.setObjectName("save_frame_2")
+        self.verticalLayout_21 = QtWidgets.QVBoxLayout(self.save_frame_2)
+        self.verticalLayout_21.setContentsMargins(-1, -1, 0, 0)
+        self.verticalLayout_21.setObjectName("verticalLayout_21")
+        self.horizontalLayout_13 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_13.setSpacing(20)
+        self.horizontalLayout_13.setObjectName("horizontalLayout_13")
+        self.label_7 = QtWidgets.QLabel(self.save_frame_2)
+        self.label_7.setObjectName("label_7")
+        self.horizontalLayout_13.addWidget(self.label_7)
+        self.lineEdit_2 = QtWidgets.QLineEdit(self.save_frame_2)
+        self.lineEdit_2.setStyleSheet("QLineEdit{\n"
+"background-color: transparent;\n"
+"border: 0px;\n"
+"font: 12pt \"Wix Madefor Display\";\n"
+"color: white;\n"
+"    selection-background-color: #2b2d2e;\n"
+"}")
+        self.lineEdit_2.setObjectName("lineEdit_2")
+        self.horizontalLayout_13.addWidget(self.lineEdit_2)
+        self.verticalLayout_21.addLayout(self.horizontalLayout_13)
+        self.save_map_2 = QtWidgets.QPushButton(self.save_frame_2)
+        self.save_map_2.setMinimumSize(QtCore.QSize(0, 36))
+        self.save_map_2.setObjectName("save_map_2")
+        self.verticalLayout_21.addWidget(self.save_map_2)
+        self.set_initial_2 = QtWidgets.QPushButton(self.save_frame_2)
+        self.set_initial_2.setMinimumSize(QtCore.QSize(0, 36))
+        self.set_initial_2.setObjectName("set_initial_2")
+        self.verticalLayout_21.addWidget(self.set_initial_2)
+        self.verticalLayout_20.addWidget(self.save_frame_2)
+        self.verticalLayout_19.addWidget(self.frame_8)
+        self.verticalLayout_22.addWidget(self.mapping_frame_2)
+        self.settings_pages.addWidget(self.map_page)
+        self.admin_page = QtWidgets.QWidget()
+        self.admin_page.setObjectName("admin_page")
+        self.verticalLayout_18 = QtWidgets.QVBoxLayout(self.admin_page)
+        self.verticalLayout_18.setContentsMargins(0, 0, 0, 0)
+        self.verticalLayout_18.setSpacing(0)
+        self.verticalLayout_18.setObjectName("verticalLayout_18")
+        self.settings_frame_2 = QtWidgets.QFrame(self.admin_page)
+        self.settings_frame_2.setMinimumSize(QtCore.QSize(400, 50))
+        self.settings_frame_2.setMaximumSize(QtCore.QSize(400, 500))
+        self.settings_frame_2.setFrameShape(QtWidgets.QFrame.NoFrame)
+        self.settings_frame_2.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.settings_frame_2.setObjectName("settings_frame_2")
+        self.verticalLayout_14 = QtWidgets.QVBoxLayout(self.settings_frame_2)
+        self.verticalLayout_14.setContentsMargins(15, 0, 15, 15)
+        self.verticalLayout_14.setObjectName("verticalLayout_14")
+        self.frame_7 = QtWidgets.QFrame(self.settings_frame_2)
+        self.frame_7.setMinimumSize(QtCore.QSize(0, 0))
+        self.frame_7.setFrameShape(QtWidgets.QFrame.NoFrame)
+        self.frame_7.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_7.setObjectName("frame_7")
+        self.verticalLayout_17 = QtWidgets.QVBoxLayout(self.frame_7)
+        self.verticalLayout_17.setContentsMargins(0, 0, 0, 0)
+        self.verticalLayout_17.setObjectName("verticalLayout_17")
+        self.close_setting = QtWidgets.QPushButton(self.frame_7)
+        self.close_setting.setObjectName("close_setting")
+        self.verticalLayout_17.addWidget(self.close_setting, 0, QtCore.Qt.AlignRight)
+        self.settings_info_2 = QtWidgets.QLabel(self.frame_7)
+        self.settings_info_2.setAlignment(QtCore.Qt.AlignCenter)
+        self.settings_info_2.setObjectName("settings_info_2")
+        self.verticalLayout_17.addWidget(self.settings_info_2)
+        self.horizontalLayout_12 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_12.setObjectName("horizontalLayout_12")
+        self.maps_line_3 = QtWidgets.QComboBox(self.frame_7)
+        self.maps_line_3.setMinimumSize(QtCore.QSize(0, 26))
+        self.maps_line_3.setStyleSheet("background-color: transparent;\n"
+"color: #72777a;")
+        self.maps_line_3.setObjectName("maps_line_3")
+        self.horizontalLayout_12.addWidget(self.maps_line_3)
+        self.load_map_3 = QtWidgets.QPushButton(self.frame_7)
+        self.load_map_3.setMinimumSize(QtCore.QSize(0, 36))
+        self.load_map_3.setStyleSheet("")
+        self.load_map_3.setObjectName("load_map_3")
+        self.horizontalLayout_12.addWidget(self.load_map_3)
+        self.new_map_3 = QtWidgets.QPushButton(self.frame_7)
+        self.new_map_3.setMinimumSize(QtCore.QSize(0, 36))
+        self.new_map_3.setObjectName("new_map_3")
+        self.horizontalLayout_12.addWidget(self.new_map_3)
+        self.verticalLayout_17.addLayout(self.horizontalLayout_12)
+        self.settings_gridlayout_3 = QtWidgets.QGridLayout()
+        self.settings_gridlayout_3.setObjectName("settings_gridlayout_3")
+        self.station_9 = QtWidgets.QPushButton(self.frame_7)
+        self.station_9.setObjectName("station_9")
+        self.settings_gridlayout_3.addWidget(self.station_9, 0, 0, 1, 1)
+        self.station_10 = QtWidgets.QPushButton(self.frame_7)
+        self.station_10.setObjectName("station_10")
+        self.settings_gridlayout_3.addWidget(self.station_10, 0, 1, 1, 1)
+        self.save_btn_3 = QtWidgets.QPushButton(self.frame_7)
+        self.save_btn_3.setMinimumSize(QtCore.QSize(0, 36))
+        self.save_btn_3.setObjectName("save_btn_3")
+        self.settings_gridlayout_3.addWidget(self.save_btn_3, 0, 2, 1, 1)
+        self.station_11 = QtWidgets.QPushButton(self.frame_7)
+        self.station_11.setObjectName("station_11")
+        self.settings_gridlayout_3.addWidget(self.station_11, 1, 0, 1, 1)
+        self.station_12 = QtWidgets.QPushButton(self.frame_7)
+        self.station_12.setObjectName("station_12")
+        self.settings_gridlayout_3.addWidget(self.station_12, 1, 1, 1, 1)
+        self.reset_btn_3 = QtWidgets.QPushButton(self.frame_7)
+        self.reset_btn_3.setMinimumSize(QtCore.QSize(0, 36))
+        self.reset_btn_3.setObjectName("reset_btn_3")
+        self.settings_gridlayout_3.addWidget(self.reset_btn_3, 1, 2, 1, 1)
+        self.verticalLayout_17.addLayout(self.settings_gridlayout_3)
+        self.verticalLayout_14.addWidget(self.frame_7)
+        self.verticalLayout_18.addWidget(self.settings_frame_2)
+        self.settings_pages.addWidget(self.admin_page)
+        self.verticalLayout_13.addWidget(self.settings_pages, 0, QtCore.Qt.AlignHCenter|QtCore.Qt.AlignBottom)
         self.horizontalLayout_10.addWidget(self.frame_4)
+        self.right_frame = QtWidgets.QFrame(self.rviz_page)
+        self.right_frame.setMinimumSize(QtCore.QSize(280, 0))
+        self.right_frame.setMaximumSize(QtCore.QSize(280, 16777215))
+        self.right_frame.setFrameShape(QtWidgets.QFrame.NoFrame)
+        self.right_frame.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.right_frame.setObjectName("right_frame")
+        self.verticalLayout_16 = QtWidgets.QVBoxLayout(self.right_frame)
+        self.verticalLayout_16.setContentsMargins(0, 100, 0, 0)
+        self.verticalLayout_16.setSpacing(0)
+        self.verticalLayout_16.setObjectName("verticalLayout_16")
+        self.velocity_frame = QtWidgets.QFrame(self.right_frame)
+        self.velocity_frame.setMinimumSize(QtCore.QSize(0, 280))
+        self.velocity_frame.setStyleSheet("QFrame#vel_out{\n"
+"    background-color: qconicalgradient(cx:0.5, cy:0.5, angle:0, stop:0.437811 #00b3f0, stop:0.442786 rgba(255, 255, 255, 3));\n"
+"border-radius: 105px;\n"
+"}\n"
+"QFrame#vel_in{\n"
+"    background-color:#2b2d2e;\n"
+"border-radius: 85;\n"
+"}")
+        self.velocity_frame.setFrameShape(QtWidgets.QFrame.NoFrame)
+        self.velocity_frame.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.velocity_frame.setObjectName("velocity_frame")
+        self.vel_out = QtWidgets.QFrame(self.velocity_frame)
+        self.vel_out.setGeometry(QtCore.QRect(40, 50, 210, 210))
+        self.vel_out.setFrameShape(QtWidgets.QFrame.NoFrame)
+        self.vel_out.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.vel_out.setObjectName("vel_out")
+        self.vel_in = QtWidgets.QFrame(self.vel_out)
+        self.vel_in.setGeometry(QtCore.QRect(20, 20, 170, 170))
+        self.vel_in.setFrameShape(QtWidgets.QFrame.NoFrame)
+        self.vel_in.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.vel_in.setObjectName("vel_in")
+        self.vel_label = QtWidgets.QLabel(self.vel_in)
+        self.vel_label.setGeometry(QtCore.QRect(50, 70, 71, 31))
+        self.vel_label.setStyleSheet("QLabel{\n"
+"color: #ffffff;\n"
+"font: 20pt \"Wix Madefor Display\";\n"
+"}")
+        self.vel_label.setAlignment(QtCore.Qt.AlignCenter)
+        self.vel_label.setObjectName("vel_label")
+        self.vel_label_2 = QtWidgets.QLabel(self.vel_in)
+        self.vel_label_2.setGeometry(QtCore.QRect(50, 100, 71, 21))
+        self.vel_label_2.setStyleSheet("QLabel{\n"
+"color: #cccccc;\n"
+"font: 12pt \"Wix Madefor Display\";\n"
+"}")
+        self.vel_label_2.setAlignment(QtCore.Qt.AlignCenter)
+        self.vel_label_2.setObjectName("vel_label_2")
+        self.verticalLayout_16.addWidget(self.velocity_frame)
+        self.vel_control_frame = QtWidgets.QFrame(self.right_frame)
+        self.vel_control_frame.setMaximumSize(QtCore.QSize(16777215, 300))
+        self.vel_control_frame.setStyleSheet("QFrame#joy_out{\n"
+"    background-color: #2b2d2e;\n"
+"    border-radius: 70px;\n"
+"}\n"
+"QFrame#joy_inside{\n"
+"    background-color: #4e5254;\n"
+"    border-radius: 35px;\n"
+"}")
+        self.vel_control_frame.setFrameShape(QtWidgets.QFrame.NoFrame)
+        self.vel_control_frame.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.vel_control_frame.setObjectName("vel_control_frame")
+        self.joy_out = QtWidgets.QFrame(self.vel_control_frame)
+        self.joy_out.setGeometry(QtCore.QRect(80, 100, 140, 140))
+        self.joy_out.setFrameShape(QtWidgets.QFrame.NoFrame)
+        self.joy_out.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.joy_out.setObjectName("joy_out")
+        self.joy_inside = QtWidgets.QFrame(self.vel_control_frame)
+        self.joy_inside.setGeometry(QtCore.QRect(115, 135, 70, 70))
+        self.joy_inside.setFrameShape(QtWidgets.QFrame.NoFrame)
+        self.joy_inside.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.joy_inside.setObjectName("joy_inside")
+        self.verticalLayout_16.addWidget(self.vel_control_frame)
+        self.horizontalLayout_10.addWidget(self.right_frame)
         self.stackedWidget.addWidget(self.rviz_page)
         self.verticalLayout_2.addWidget(self.stackedWidget)
         self.verticalLayout.addWidget(self.central_frame)
@@ -460,6 +690,7 @@ class Ui_MainWindow(object):
 
         self.retranslateUi(MainWindow)
         self.stackedWidget.setCurrentIndex(0)
+        self.settings_pages.setCurrentIndex(1)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
 
     def retranslateUi(self, MainWindow):
@@ -490,6 +721,23 @@ class Ui_MainWindow(object):
         self.label_5.setText(_translate("MainWindow", "Name:"))
         self.save_map.setText(_translate("MainWindow", "Save"))
         self.set_initial.setText(_translate("MainWindow", "Set initial"))
+        self.close_map.setText(_translate("MainWindow", "x"))
+        self.mapping_info_2.setText(_translate("MainWindow", "gif status"))
+        self.label_7.setText(_translate("MainWindow", "Name:"))
+        self.save_map_2.setText(_translate("MainWindow", "Save"))
+        self.set_initial_2.setText(_translate("MainWindow", "Set initial"))
+        self.close_setting.setText(_translate("MainWindow", "x"))
+        self.settings_info_2.setText(_translate("MainWindow", "info"))
+        self.load_map_3.setText(_translate("MainWindow", "Load map"))
+        self.new_map_3.setText(_translate("MainWindow", "+New map"))
+        self.station_9.setText(_translate("MainWindow", "station#1"))
+        self.station_10.setText(_translate("MainWindow", "station#2"))
+        self.save_btn_3.setText(_translate("MainWindow", "Save"))
+        self.station_11.setText(_translate("MainWindow", "station#3"))
+        self.station_12.setText(_translate("MainWindow", "station#4"))
+        self.reset_btn_3.setText(_translate("MainWindow", "Reset"))
+        self.vel_label.setText(_translate("MainWindow", "0.2"))
+        self.vel_label_2.setText(_translate("MainWindow", "m/s"))
         self.label_3.setText(_translate("MainWindow", "NCT Robotik"))
 import resource_rc
 
