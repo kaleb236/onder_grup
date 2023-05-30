@@ -2,6 +2,8 @@ from main import *
 import math
 from PyQt5.QtCore import QPropertyAnimation, QEasingCurve
 
+# from rviz import bindings as rviz
+
 class UIFunctions(ui_windows):
 
     def animations(self,maxWidth, widget):
@@ -64,3 +66,21 @@ class UIFunctions(ui_windows):
 
         self.ui.vel_out.setStyleSheet(newStyleSheet)
         self.ui.vel_label.setText(str(abs(round(self.lin_vel, 2))))
+    
+    # def add_rviz(self):
+    #     self.frame = rviz.VisualizationFrame()
+    #     self.frame.setSplashPath( "" )
+    #     self.frame.initialize()
+
+    #     reader = rviz.YamlConfigReader()
+    #     config = rviz.Config()
+    #     reader.readFile( config, "rur_navigation.rviz" )
+    #     self.frame.load( config )
+    #     self.setWindowTitle( config.mapGetChild( "Title" ).getValue() )
+
+    #     ## main render window.
+    #     self.frame.setMenuBar( None )
+    #     self.frame.setStatusBar( None )
+    #     self.frame.setHideButtonVisibility( False )
+    #     # layout = QVBoxLayout()
+    #     self.ui.gridLayout.addWidget(self.frame, 0,0,1,1)

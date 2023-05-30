@@ -18,6 +18,7 @@ class ui_windows(QMainWindow):
 
         self.button_clicks()
         self.initial_variables()
+        # UIFunctions.add_rviz(self)
     
     def initial_variables(self):
         self.ui.settings_pages.setCurrentWidget(self.ui.admin_page)

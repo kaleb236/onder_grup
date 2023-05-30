@@ -428,7 +428,7 @@ class Ui_MainWindow(object):
         self.verticalLayout_13.setSpacing(15)
         self.verticalLayout_13.setObjectName("verticalLayout_13")
         self.rviz_frame = QtWidgets.QFrame(self.frame_4)
-        self.rviz_frame.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.rviz_frame.setFrameShape(QtWidgets.QFrame.NoFrame)
         self.rviz_frame.setFrameShadow(QtWidgets.QFrame.Raised)
         self.rviz_frame.setObjectName("rviz_frame")
         self.gridLayout = QtWidgets.QGridLayout(self.rviz_frame)
@@ -690,7 +690,7 @@ class Ui_MainWindow(object):
 
         self.retranslateUi(MainWindow)
         self.stackedWidget.setCurrentIndex(0)
-        self.settings_pages.setCurrentIndex(1)
+        self.settings_pages.setCurrentIndex(0)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
 
     def retranslateUi(self, MainWindow):
